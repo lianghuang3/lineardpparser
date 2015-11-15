@@ -99,7 +99,8 @@ The code should be runnable as is on most 64-bit Linux platforms.
 =======================================
 
   Usage:
-     ./code/multitrainer.py --train <train> --dev <dev> -i <iter> \
+	
+     	./code/multitrainer.py --train <train> --dev <dev> -i <iter> \
      			    --out <trained_model> -w <templates> \
 			    -b<beam> [--update <method>] [--multi <multi>] 
   
@@ -151,7 +152,7 @@ The code should be runnable as is on most 64-bit Linux platforms.
 
   * To use parallelized perceptron of McDonald et al (2010):
 
-    Use --multi <m> (e.g., m=10) and a much larger -i <i>. 
+    Use `--multi <m>` (e.g., `m=10`) and a much larger `-i <i>`. 
     Each epoch will be roughly speaking m times faster, but the accuracies suffer a lot;
     so you need many more epochs than before (e.g., -i70 for max and -i300 for early).
     In the end the speedup would be around 1.5 (with m=10).
