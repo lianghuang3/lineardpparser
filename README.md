@@ -27,10 +27,10 @@ This package requires Python 2.7.
 0 DIRECTORIES AND INSTALLATION 
 ====================
 
-  code/	      parser code
-  data/	      English Treebank, tagged by jackknifing
-  models/     trained models
-  hvector/    sparse vector class (included as a bonus)
+-  `code/`	      parser code
+-  `data/`	      English Treebank, tagged by jackknifing
+-  `models/`     trained models
+-  `hvector/`    sparse vector class (included as a bonus)
 
   The code should be runnable as is on most 64-bit Linux platforms.
 
