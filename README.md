@@ -14,7 +14,9 @@ This parser is described in the following two papers:
 Note that the default trainer is the max-violation perceptron in paper 2,
 so is the latest model included. 
 
-The trainer also implements the parallized perceptron of McDonald et al (2010).
+The trainer also implements the parallized perceptron of McDonald et al (2010),
+which will be replaced by the much faster minibatch perceptron (Zhao and Huang, 2013)
+in the next release.
 
 Author: Liang Huang <liang.huang.sh@gmail.com>
 
