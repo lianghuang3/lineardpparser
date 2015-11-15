@@ -1,4 +1,5 @@
 Linear-Time Dynamic Programming Shift-Reduce Dependency Parser.
+===
 
 This parser is described in the following two papers:
 
@@ -21,7 +22,8 @@ User Manual.
 
 This package requires Python 2.7.
 
-0 DIRECTORIES AND INSTALLATION ====================
+0 DIRECTORIES AND INSTALLATION 
+====================
 
   code/	      parser code
   data/	      English Treebank, tagged by jackknifing
@@ -41,7 +43,8 @@ This package requires Python 2.7.
   
   or get them from python.org (just download python source code which contains header files).
 
-1 PARSING =========================================
+1 PARSING 
+=========================================
 
 	Usage:
 		cat <input_file> | ./code/parser.py -w <model_file> [-b <beam_width>]
@@ -89,7 +92,8 @@ This package requires Python 2.7.
 	   Note that loading the big model is extremeley slow (~1 min), but parsing should
 	   be very fast (~0.04 seconds per sentence).
 
-2 TRAINING  =======================================
+2 TRAINING  
+=======================================
 
   Usage:
      ./code/multitrainer.py --train <train> --dev <dev> -i <iter> \
@@ -157,10 +161,13 @@ This package requires Python 2.7.
 
     Adding --shuffle would often improve the results, but no longer deterministic.
 
-3 FEATURES TO COME VERY SOON =====================
+3 FEATURES TO COME VERY SOON 
+=====================
 
-  * parallelized parsing (trivial) and model reading.
-    (currently supports parallelized training and evaluation on dev)
+  * parallelized parsing and model reading.
+    (currently supports parallelized training and evaluation on dev, 
+	using parallelized perceptron of McDonald et al 2010)
 
-  * much better parallelized training (under review).
+  * minibatch parallelized percpetron training (Zhao and Huang, 2013),
+	much faster than McDonald et al (2010).
 # lineardpparser
