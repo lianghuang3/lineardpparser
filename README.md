@@ -32,7 +32,8 @@ This package requires Python 2.7.
 -  `models/`     trained models
 -  `hvector/`    sparse vector class (included as a bonus)
 
-  The code should be runnable as is on most 64-bit Linux platforms.
+  
+The code should be runnable as is on most 64-bit Linux platforms.
 
   On other platforms (e.g. Mac OS X or 32-bit Linux, or if it doesn't run), try:
   
