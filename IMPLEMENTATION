@@ -1,0 +1,67 @@
+Implementation Notes (if you want to extend my parser).
+
+main program for parsing:
+
+    parser.py
+
+main program for training:
+
+    multitrainer.py
+
+main state class for parsing:
+
+    newstate.py (class NewState)
+
+        i, j: span of the top tree on stack. j is also the queue head position.
+        
+        score: prefix score (total score accumulated since the start state)
+        inside: inside score (of the subderivation underneath this state)
+        
+        step: how many actions up to this state
+        action: current action
+        
+        s0, s1, s2: top few trees on the stack; represented only using feature signatures
+                    (i.e., no real trees are stored!)
+        s0lcrc, s1lcrc: leftmost or rightmost child of s0 or s1 (part of the signature)
+
+        q0, q1, q2: queue head words (and tags) for lookahead 
+                    (not part of the state signature! only cached for convenience)
+
+        backptrs: list of incoming hyperedges (backpointers to recover the tree)
+        leftptrs: states to my left that can combine w/ me: graph-structured stack.
+                    (the \pi in Figure 3 in the paper)
+                  
+                  when a better state A merges with equivalent state B:
+                    if A/B are shifted states (predicted states)
+                        union their leftptrs
+                    otherwise (A/B are reduced states)
+                        their leftptrs should already be the same; just union their backptrs
+
+                  # TODO: prove that equivalent reduced states must have same sets of leftptrs
+
+        shiftcost is the cost to shift to the next state (not the cost to shift to myself!)
+
+
+supporting classes:
+
+    deptree.py:
+
+        DepVal: 
+            unlabeled dependency accuracy metric (additive).
+
+            totalprec = DepVal()            
+            prec = DepTree.compare(tree, reftree)
+            totalprec += prec
+
+        DepTree: dependency tree
+            
+            to get the dependency tree from string:
+
+                reftree = DepTree.parse(line)
+
+            N.B.: DepTree.sent is a static variable, and is
+                  shared across all (sub)trees of this sentence.
+                  There can only be one DepTree instance in (per-core) memory!
+                    (fine with multiprocessing)                   
+            
+            TODO: DepTree instances should be pooled (see ../testnew.py).

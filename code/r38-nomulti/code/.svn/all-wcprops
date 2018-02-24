@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/mydepparser/!svn/ver/38/code
+END
+deptree.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/mydepparser/!svn/ver/11/code/deptree.py
+END
+newstate.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/mydepparser/!svn/ver/29/code/newstate.py
+END
+parser.py
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/mydepparser/!svn/ver/17/code/parser.py
+END
+tree.py
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/mydepparser/!svn/ver/12/code/tree.py
+END
+model.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/mydepparser/!svn/ver/29/code/model.py
+END
+myparser.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/mydepparser/!svn/ver/32/code/myparser.py
+END
+forest.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/mydepparser/!svn/ver/3/code/forest.py
+END
+node_and_hyperedge.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/mydepparser/!svn/ver/3/code/node_and_hyperedge.py
+END
+gflags.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/mydepparser/!svn/ver/3/code/gflags.py
+END
+utility.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/mydepparser/!svn/ver/11/code/utility.py
+END
+mytime.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/mydepparser/!svn/ver/3/code/mytime.py
+END
+trainer.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/mydepparser/!svn/ver/29/code/trainer.py
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/mydepparser/!svn/ver/11/code/README
+END
+fvector.py
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/mydepparser/!svn/ver/3/code/fvector.py
+END
+mytrainer.py
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/mydepparser/!svn/ver/35/code/mytrainer.py
+END
+replace_postags.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/mydepparser/!svn/ver/3/code/replace_postags.py
+END
+oldstate.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/mydepparser/!svn/ver/3/code/oldstate.py
+END
+kbest_oracles.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/mydepparser/!svn/ver/3/code/kbest_oracles.py
+END
+depeval.py
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/mydepparser/!svn/ver/6/code/depeval.py
+END
+heads.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/mydepparser/!svn/ver/13/code/heads.py
+END

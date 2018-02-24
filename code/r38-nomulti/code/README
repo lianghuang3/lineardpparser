@@ -1,0 +1,86 @@
+Linear-Time Dynamic Programming Shift-Reduce Dependency Parser.
+Author: Liang Huang (lhuang@isi.edu)
+
+May 14, 2010.
+
+Described in:
+    * Liang Huang and Kenji Sagae (2010). Dynamic Programming for Linear-Time Incremental Parsing. In Proc. of ACL 2010.
+
+*** Academic Use Only. No further redistribution. ***
+
+Currently parses English and Chinese POS-tagged sentences into projective dependency trees.
+Trained on Penn Treebank and Penn Chinese Treebank.
+Speed: ~500 words per second (on a 3.2GHz Xeon CPU).
+
+User Manual.
+
+
+0 Installation
+
+    To run the parser you only need Python >=2.6, but <3.
+    For training you also need David Chiang's svector.    
+
+1 PARSING ============================================================================================================
+
+	Usage:
+		cat <input_file> | ./code/parser.py -w <model_file> [--dp] [-b <beam_width>]
+
+    Recommended Usage:
+
+    for English:
+		cat <input_file> | ./code/parser.py -w model4way.b8.dp.92.12.templates --dp -b 8        
+
+    for Chinese:
+		cat <input_file> | ./code/parser.py -w modelctb.q2.b8.dp.8504.templates --dp -b 8        
+
+
+	a) to parse POS-tagged sentences:
+
+		echo "I/PRP am/VBP a/DT scientist/NN ./." | ./code/parser.py -w small_model.b1 --dp 
+
+	output:
+		((I/PRP) am/VBP ((a/DT) scientist/NN) (./.))
+		sentence 1    (len 5): modelcost= 119.94	prec= 100.00	states= 9 (uniq 9)	edges= 18	time= 0.00
+
+
+	b) to parse and evaluate accuracy against gold trees:
+	
+		echo "((I/PRP) am/VBP ((a/DT) scientist/NN) (./.))" | ./code/parser.py -w full_model.ptb.b16.templates -b 16 --dp
+
+	output:
+		((I/PRP) am/VBP ((a/DT) scientist/NN) (./.))
+		sentence 1    (len 5): modelcost= 263.64	prec= 100.00	states= 71 (uniq 71)	edges= 133	time= 0.04
+
+
+	c) interactive mode:
+
+		./code/parser.py -w fulljiang.ptb.b16.templates -b 16 --dp
+
+
+	d) other parameters:
+
+		./code/parser.py:
+			-D,--debuglevel: debug level (0: no debug info, 1: brief, 2: detailed)   (default: '0')
+		  --[no]seq: print action sequence		    (default: 'false')
+		  -s,--sim: simulate action sequences from FILE
+		  --[no]uniqstat: print uniq states stat info		    (default: 'false')
+
+		model:
+		  --ow,--outputweights: write weights (in short-hand format); - for STDOUT
+
+
+2 MODELS =============================================================================================================
+
+	a) add templates to a feature file:
+	
+		./code/model.py -w small_model.b1 --ow small_model.b1.templates
+
+	this can usually speed up model loading by about 100%. (full model on PTB, n=16, nodp: 41.75 vs. 21.70 secs)
+
+	b) print feature stats:
+
+		./code/model.py -w small_model.b1
+
+
+3 TRAINING  ==========================================================================================================
+

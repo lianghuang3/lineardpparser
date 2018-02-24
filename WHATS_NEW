@@ -1,0 +1,51 @@
+-----------------------------------------------------
+WHAT'S NEW IN VERSION 2.0.3:
+-----------------------------------------------------
+extension modules:
+1. removed "from Cython import ..." in setup.py.
+   The modules were written in C, so there is no need for Cython.
+   Installation of these modules only requires gcc.
+
+python2.7:
+1. removed the suggestion to install 2.7 on Ubuntu 12.04 because this version only uses Perceptron
+   where weights are integers so that floating point error is not a problem.
+   (The next major release will use MIRA where it will be a problem).
+
+-----------------------------------------------------
+WHAT'S NEW IN VERSION 2.0.2:
+-----------------------------------------------------
+trainer:
+1. singletrain, singledev, and single are no longer cmdline flags, but internal variables. 
+   (still messy; TODO: further cleanup).
+2. finaldump option (significant in multi mode); by default off
+
+README:
+1. added log info
+2. added instructions to replicate Huang and Sagae (2010).
+3. added instructions for parallelized training.
+
+-----------------------------------------------------
+WHAT'S NEW IN VERSION 2.0.1:
+-----------------------------------------------------
+
+deptree:
+1. tot is now 1e-9, otherwise parsing plain text will have division-by-zero error in nonroot.
+
+    def __init__(self, yes=0, tot=1e-9, rootyes=0, roottot=1e-10, completeyes=0):
+
+    def nonroot(self):
+        return (self.yes - self.rootyes) / (self.tot - self.roottot) if self.roottot != 0 else 0
+
+model:
+1. -w <str> is now disallowed. if fail to read file (no such file or bad format), it'll exit.
+
+-----------------------------------------------------
+WHAT'S NEW IN VERSION 2.0:
+-----------------------------------------------------
+
+parser/trainer:
+1. update: max is now default (used to be early).
+2. -b: 8 is default (used to be 1).
+3. -i: 15 is default (used to be 1).
+4. --single is now default (used to be multi all).
+

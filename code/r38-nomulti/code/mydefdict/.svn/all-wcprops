@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/mydepparser/!svn/ver/38/code/mydefdict
+END
+deptree.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/mydepparser/!svn/ver/38/code/mydefdict/deptree.py
+END
+newstate.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/mydepparser/!svn/ver/38/code/mydefdict/newstate.py
+END
+parser.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/mydepparser/!svn/ver/38/code/mydefdict/parser.py
+END
+model.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/mydepparser/!svn/ver/38/code/mydefdict/model.py
+END
+forest.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/mydepparser/!svn/ver/38/code/mydefdict/forest.py
+END
+node_and_hyperedge.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/mydepparser/!svn/ver/38/code/mydefdict/node_and_hyperedge.py
+END
+gflags.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/mydepparser/!svn/ver/38/code/mydefdict/gflags.py
+END
+trainer.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/mydepparser/!svn/ver/38/code/mydefdict/trainer.py
+END
+mytime.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/mydepparser/!svn/ver/38/code/mydefdict/mytime.py
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/mydepparser/!svn/ver/38/code/mydefdict/README
+END
+fvector.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/mydepparser/!svn/ver/38/code/mydefdict/fvector.py
+END
+replace_postags.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/mydepparser/!svn/ver/38/code/mydefdict/replace_postags.py
+END
+oldstate.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/mydepparser/!svn/ver/38/code/mydefdict/oldstate.py
+END
+kbest_oracles.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/mydepparser/!svn/ver/38/code/mydefdict/kbest_oracles.py
+END
+depeval.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/mydepparser/!svn/ver/38/code/mydefdict/depeval.py
+END

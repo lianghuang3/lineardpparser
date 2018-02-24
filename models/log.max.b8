@@ -1,0 +1,885 @@
+using wvector...
+reading templates from models/q2.templates 50 feature templates read.
+reading feature weights from models/q2.templates	
+0 feature instances (0 lines) read in 0.00 seconds.
+importing auto-generated file /tmp/1358051767.py
+importing succeeded!
+reading training / dev lines...
+total steps 1860224
+39832 training lines and 1700 dev lines read; took 0.1 seconds
+16 CPUs at  Intel(R) Xeon(R) CPU E5-2687W 0 @ 3.10GHz  1200.000
+starting perceptron at Sat Jan 12 23:36:07 2013
+iteration 1 starts..............Sat Jan 12 23:36:07 2013
+memory usage at iter 1 before pool: 132.0 kB	(135168.0 B)
+memory usage at iter 1 after pool: 132.0 kB	(135168.0 B)
+before para time... 1358051767.86
+... example 1000 (len 21)... sim=0.00%, |delta|=667
+... example 2000 (len 20)... sim=0.00%, |delta|=756
+... example 3000 (len 24)... sim=0.00%, |delta|=709
+... example 4000 (len 47)... sim=0.00%, |delta|=547
+... example 5000 (len 40)... sim=0.00%, |delta|=1179
+... example 6000 (len 30)... sim=0.00%, |delta|=484
+... example 7000 (len 34)... sim=0.00%, |delta|=1028
+... example 8000 (len 16)... sim=0.00%, |delta|=488
+... example 9000 (len 23)... sim=0.00%, |delta|=414
+... example 10000 (len 19)... sim=0.00%, |delta|=303
+... example 11000 (len 23)... sim=0.00%, |delta|=204
+... example 12000 (len 13)... sim=0.00%, |delta|=234
+... example 13000 (len 21)... sim=0.00%, |delta|=534
+... example 14000 (len 28)... sim=0.00%, |delta|=408
+... example 15000 (len 18)... sim=0.00%, |delta|=151
+... example 16000 (len 30)... sim=0.00%, |delta|=604
+... example 17000 (len 21)... sim=0.00%, |delta|=177
+... example 18000 (len 24)... sim=0.00%, |delta|=379
+... example 19000 (len 12)... sim=0.00%, |delta|=0
+... example 20000 (len 35)... sim=0.00%, |delta|=1379
+... example 21000 (len 23)... sim=0.00%, |delta|=654
+... example 22000 (len 19)... sim=0.00%, |delta|=363
+... example 23000 (len 19)... sim=0.00%, |delta|=234
+... example 24000 (len 16)... sim=0.00%, |delta|=218
+... example 25000 (len 12)... sim=0.00%, |delta|=214
+... example 26000 (len 24)... sim=0.00%, |delta|=295
+... example 27000 (len 12)... sim=0.00%, |delta|=100
+... example 28000 (len 43)... sim=0.00%, |delta|=1291
+... example 29000 (len 21)... sim=0.00%, |delta|=320
+... example 30000 (len 31)... sim=0.00%, |delta|=296
+... example 31000 (len 20)... sim=0.00%, |delta|=100
+... example 32000 (len 44)... sim=0.00%, |delta|=415
+... example 33000 (len 18)... sim=0.00%, |delta|=443
+... example 34000 (len 28)... sim=0.00%, |delta|=299
+... example 35000 (len 29)... sim=0.00%, |delta|=1026
+... example 36000 (len 17)... sim=0.00%, |delta|=338
+... example 37000 (len 31)... sim=0.00%, |delta|=171
+... example 38000 (len 25)... sim=0.00%, |delta|=205
+... example 39000 (len 27)... sim=0.00%, |delta|=148
+inside a para time... 1358051767.86 1358052786.79 1018.92761898
+mydouble usage and freed: 3846298 39270152 |w|= 3846296 |avgw|= 3846296 |dw|= 0
+after para time... 1358052786.79
+gc can't reach 0
+pool_time= 0.0 s, compute_walltime= 1018.9 s, compute_cputime= 1018.9 (1018.9), copy_time= 0.0 s
+memory usage at iter 1 after fork: 532.8 MB	(558686208.0 B)
+self.c= 39832
+memory usage at iter 1: extra 532.7 MB	(558551040.0 B), total 532.8 MB	(558686208.0 B)
+iteration 1 training finished at Sat Jan 12 23:53:07 2013. now evaluating on dev...
+avg weights (trim) took 0.2 seconds.
+garbage collection... took 0.5 seconds
+eval on dev took 41.6 seconds.
+at iter 1, updates 39832 (early 32334, er 81.2%), dev 90.62%+, |w| 3846296, time 0.295h acctime 0.295h; steps 1391597 cover 74.8% accsteps 1391597; bad 0 br 0.0%
+gc can't reach 0
+mydouble usage and freed: 3846298 39270152 ------------------------
+iteration 2 starts..............Sat Jan 12 23:53:49 2013
+memory usage at iter 2 before pool: 537.6 MB	(563666944.0 B)
+memory usage at iter 2 after pool: 537.6 MB	(563666944.0 B)
+before para time... 1358052829.78
+... example 1000 (len 21)... sim=0.00%, |delta|=285
+... example 2000 (len 20)... sim=0.00%, |delta|=333
+... example 3000 (len 24)... sim=0.00%, |delta|=185
+... example 4000 (len 47)... sim=0.00%, |delta|=562
+... example 5000 (len 40)... sim=0.00%, |delta|=1018
+... example 6000 (len 30)... sim=0.00%, |delta|=703
+... example 7000 (len 34)... sim=0.00%, |delta|=391
+... example 8000 (len 16)... sim=0.00%, |delta|=231
+... example 9000 (len 23)... sim=0.00%, |delta|=623
+... example 10000 (len 19)... sim=0.00%, |delta|=100
+... example 11000 (len 23)... sim=0.00%, |delta|=992
+... example 12000 (len 13)... sim=0.00%, |delta|=234
+... example 13000 (len 21)... sim=0.00%, |delta|=669
+... example 14000 (len 28)... sim=0.00%, |delta|=554
+... example 15000 (len 18)... sim=0.00%, |delta|=100
+... example 16000 (len 30)... sim=0.00%, |delta|=755
+... example 17000 (len 21)... sim=0.00%, |delta|=0
+... example 18000 (len 24)... sim=0.00%, |delta|=397
+... example 19000 (len 12)... sim=0.00%, |delta|=100
+... example 20000 (len 35)... sim=0.00%, |delta|=540
+... example 21000 (len 23)... sim=0.00%, |delta|=415
+... example 22000 (len 19)... sim=0.00%, |delta|=224
+... example 23000 (len 19)... sim=0.00%, |delta|=672
+... example 24000 (len 16)... sim=0.00%, |delta|=168
+... example 25000 (len 12)... sim=0.00%, |delta|=214
+... example 26000 (len 24)... sim=0.00%, |delta|=640
+... example 27000 (len 12)... sim=0.00%, |delta|=100
+... example 28000 (len 43)... sim=0.00%, |delta|=933
+... example 29000 (len 21)... sim=0.00%, |delta|=330
+... example 30000 (len 31)... sim=0.00%, |delta|=384
+... example 31000 (len 20)... sim=0.00%, |delta|=154
+... example 32000 (len 44)... sim=0.00%, |delta|=623
+... example 33000 (len 18)... sim=0.00%, |delta|=818
+... example 34000 (len 28)... sim=0.00%, |delta|=307
+... example 35000 (len 29)... sim=0.00%, |delta|=662
+... example 36000 (len 17)... sim=0.00%, |delta|=208
+... example 37000 (len 31)... sim=0.00%, |delta|=366
+... example 38000 (len 25)... sim=0.00%, |delta|=308
+... example 39000 (len 27)... sim=0.00%, |delta|=100
+inside a para time... 1358052829.78 1358053971.82 1142.03833008
+mydouble usage and freed: 4950069 70252160 |w|= 4950067 |avgw|= 4950067 |dw|= 0
+after para time... 1358053971.82
+gc can't reach 0
+pool_time= 0.0 s, compute_walltime= 1142.0 s, compute_cputime= 1142.0 (1142.0), copy_time= 0.0 s
+memory usage at iter 2 after fork: 680.8 MB	(713879552.0 B)
+self.c= 79664
+memory usage at iter 2: extra 143.3 MB	(150212608.0 B), total 680.8 MB	(713879552.0 B)
+iteration 2 training finished at Sun Jan 13 00:12:52 2013. now evaluating on dev...
+avg weights (trim) took 0.2 seconds.
+garbage collection... took 0.7 seconds
+eval on dev took 45.1 seconds.
+at iter 2, updates 39832 (early 31297, er 78.6%), dev 91.49%+, |w| 4950067, time 0.330h acctime 0.625h; steps 1326040 cover 71.3% accsteps 2717637; bad 0 br 0.0%
+gc can't reach 0
+mydouble usage and freed: 4950069 70252160 ------------------------
+iteration 3 starts..............Sun Jan 13 00:13:39 2013
+memory usage at iter 3 before pool: 682.8 MB	(715976704.0 B)
+memory usage at iter 3 after pool: 682.8 MB	(715976704.0 B)
+before para time... 1358054019.01
+... example 1000 (len 21)... sim=0.00%, |delta|=255
+... example 2000 (len 20)... sim=0.00%, |delta|=426
+... example 3000 (len 24)... sim=0.00%, |delta|=218
+... example 4000 (len 47)... sim=0.00%, |delta|=629
+... example 5000 (len 40)... sim=0.00%, |delta|=1102
+... example 6000 (len 30)... sim=0.00%, |delta|=409
+... example 7000 (len 34)... sim=0.00%, |delta|=376
+... example 8000 (len 16)... sim=0.00%, |delta|=231
+... example 9000 (len 23)... sim=0.00%, |delta|=873
+... example 10000 (len 19)... sim=0.00%, |delta|=100
+... example 11000 (len 23)... sim=0.00%, |delta|=641
+... example 12000 (len 13)... sim=0.00%, |delta|=0
+... example 13000 (len 21)... sim=0.00%, |delta|=757
+... example 14000 (len 28)... sim=0.00%, |delta|=0
+... example 15000 (len 18)... sim=0.00%, |delta|=216
+... example 16000 (len 30)... sim=0.00%, |delta|=1227
+... example 17000 (len 21)... sim=0.00%, |delta|=220
+... example 18000 (len 24)... sim=0.00%, |delta|=156
+... example 19000 (len 12)... sim=0.00%, |delta|=0
+... example 20000 (len 35)... sim=0.00%, |delta|=375
+... example 21000 (len 23)... sim=0.00%, |delta|=298
+... example 22000 (len 19)... sim=0.00%, |delta|=100
+... example 23000 (len 19)... sim=0.00%, |delta|=171
+... example 24000 (len 16)... sim=0.00%, |delta|=0
+... example 25000 (len 12)... sim=0.00%, |delta|=229
+... example 26000 (len 24)... sim=0.00%, |delta|=368
+... example 27000 (len 12)... sim=0.00%, |delta|=0
+... example 28000 (len 43)... sim=0.00%, |delta|=1000
+... example 29000 (len 21)... sim=0.00%, |delta|=181
+... example 30000 (len 31)... sim=0.00%, |delta|=378
+... example 31000 (len 20)... sim=0.00%, |delta|=100
+... example 32000 (len 44)... sim=0.00%, |delta|=887
+... example 33000 (len 18)... sim=0.00%, |delta|=465
+... example 34000 (len 28)... sim=0.00%, |delta|=343
+... example 35000 (len 29)... sim=0.00%, |delta|=375
+... example 36000 (len 17)... sim=0.00%, |delta|=194
+... example 37000 (len 31)... sim=0.00%, |delta|=290
+... example 38000 (len 25)... sim=0.00%, |delta|=152
+... example 39000 (len 27)... sim=0.00%, |delta|=148
+inside a para time... 1358054019.01 1358055250.51 1231.50470114
+mydouble usage and freed: 5602652 96787825 |w|= 5602650 |avgw|= 5602650 |dw|= 0
+after para time... 1358055250.51
+gc can't reach 0
+pool_time= 0.0 s, compute_walltime= 1231.5 s, compute_cputime= 1231.5 (1231.5), copy_time= 0.0 s
+memory usage at iter 3 after fork: 786.6 MB	(824770560.0 B)
+self.c= 119496
+memory usage at iter 3: extra 103.8 MB	(108793856.0 B), total 786.6 MB	(824770560.0 B)
+iteration 3 training finished at Sun Jan 13 00:34:11 2013. now evaluating on dev...
+avg weights (trim) took 0.3 seconds.
+garbage collection... took 0.9 seconds
+eval on dev took 48.5 seconds.
+at iter 3, updates 39832 (early 30266, er 76.0%), dev 91.92%+, |w| 5602650, time 0.356h acctime 0.981h; steps 1300282 cover 69.9% accsteps 4017919; bad 0 br 0.0%
+gc can't reach 0
+mydouble usage and freed: 5602652 96787825 ------------------------
+iteration 4 starts..............Sun Jan 13 00:35:01 2013
+memory usage at iter 4 before pool: 788.1 MB	(826343424.0 B)
+memory usage at iter 4 after pool: 788.1 MB	(826343424.0 B)
+before para time... 1358055301.27
+... example 1000 (len 21)... sim=0.00%, |delta|=183
+... example 2000 (len 20)... sim=0.00%, |delta|=340
+... example 3000 (len 24)... sim=0.00%, |delta|=468
+... example 4000 (len 47)... sim=0.00%, |delta|=263
+... example 5000 (len 40)... sim=0.00%, |delta|=866
+... example 6000 (len 30)... sim=0.00%, |delta|=520
+... example 7000 (len 34)... sim=0.00%, |delta|=183
+... example 8000 (len 16)... sim=0.00%, |delta|=332
+... example 9000 (len 23)... sim=0.00%, |delta|=214
+... example 10000 (len 19)... sim=0.00%, |delta|=138
+... example 11000 (len 23)... sim=0.00%, |delta|=243
+... example 12000 (len 13)... sim=0.00%, |delta|=160
+... example 13000 (len 21)... sim=0.00%, |delta|=321
+... example 14000 (len 28)... sim=0.00%, |delta|=100
+... example 15000 (len 18)... sim=0.00%, |delta|=0
+... example 16000 (len 30)... sim=0.00%, |delta|=455
+... example 17000 (len 21)... sim=0.00%, |delta|=210
+... example 18000 (len 24)... sim=0.00%, |delta|=281
+... example 19000 (len 12)... sim=0.00%, |delta|=185
+... example 20000 (len 35)... sim=0.00%, |delta|=590
+... example 21000 (len 23)... sim=0.00%, |delta|=142
+... example 22000 (len 19)... sim=0.00%, |delta|=100
+... example 23000 (len 19)... sim=0.00%, |delta|=177
+... example 24000 (len 16)... sim=0.00%, |delta|=176
+... example 25000 (len 12)... sim=0.00%, |delta|=229
+... example 26000 (len 24)... sim=0.00%, |delta|=241
+... example 27000 (len 12)... sim=0.00%, |delta|=0
+... example 28000 (len 43)... sim=0.00%, |delta|=832
+... example 29000 (len 21)... sim=0.00%, |delta|=627
+... example 30000 (len 31)... sim=0.00%, |delta|=205
+... example 31000 (len 20)... sim=0.00%, |delta|=0
+... example 32000 (len 44)... sim=0.00%, |delta|=100
+... example 33000 (len 18)... sim=0.00%, |delta|=170
+... example 34000 (len 28)... sim=0.00%, |delta|=307
+... example 35000 (len 29)... sim=0.00%, |delta|=284
+... example 36000 (len 17)... sim=0.00%, |delta|=296
+... example 37000 (len 31)... sim=0.00%, |delta|=536
+... example 38000 (len 25)... sim=0.00%, |delta|=217
+... example 39000 (len 27)... sim=0.00%, |delta|=0
+inside a para time... 1358055301.27 1358056563.5 1262.22560692
+mydouble usage and freed: 6044702 120229624 |w|= 6044700 |avgw|= 6044700 |dw|= 0
+after para time... 1358056563.5
+gc can't reach 0
+pool_time= 0.0 s, compute_walltime= 1262.2 s, compute_cputime= 1262.2 (1262.2), copy_time= 0.0 s
+memory usage at iter 4 after fork: 825.6 MB	(865669120.0 B)
+self.c= 159328
+memory usage at iter 4: extra 37.5 MB	(39325696.0 B), total 825.6 MB	(865669120.0 B)
+iteration 4 training finished at Sun Jan 13 00:56:04 2013. now evaluating on dev...
+avg weights (trim) took 0.3 seconds.
+garbage collection... took 1.0 seconds
+eval on dev took 52.7 seconds.
+at iter 4, updates 39832 (early 29279, er 73.5%), dev 91.96%+, |w| 6044700, time 0.366h acctime 1.347h; steps 1286237 cover 69.1% accsteps 5304156; bad 0 br 0.0%
+gc can't reach 0
+mydouble usage and freed: 6044702 120229624 ------------------------
+iteration 5 starts..............Sun Jan 13 00:56:59 2013
+memory usage at iter 5 before pool: 827.1 MB	(867241984.0 B)
+memory usage at iter 5 after pool: 827.1 MB	(867241984.0 B)
+before para time... 1358056619.19
+... example 1000 (len 21)... sim=0.00%, |delta|=285
+... example 2000 (len 20)... sim=0.00%, |delta|=445
+... example 3000 (len 24)... sim=0.00%, |delta|=271
+... example 4000 (len 47)... sim=0.00%, |delta|=166
+... example 5000 (len 40)... sim=0.00%, |delta|=618
+... example 6000 (len 30)... sim=0.00%, |delta|=442
+... example 7000 (len 34)... sim=0.00%, |delta|=328
+... example 8000 (len 16)... sim=0.00%, |delta|=169
+... example 9000 (len 23)... sim=0.00%, |delta|=208
+... example 10000 (len 19)... sim=0.00%, |delta|=170
+... example 11000 (len 23)... sim=0.00%, |delta|=308
+... example 12000 (len 13)... sim=0.00%, |delta|=0
+... example 13000 (len 21)... sim=0.00%, |delta|=677
+... example 14000 (len 28)... sim=0.00%, |delta|=359
+... example 15000 (len 18)... sim=0.00%, |delta|=0
+... example 16000 (len 30)... sim=0.00%, |delta|=213
+... example 17000 (len 21)... sim=0.00%, |delta|=218
+... example 18000 (len 24)... sim=0.00%, |delta|=232
+... example 19000 (len 12)... sim=0.00%, |delta|=0
+... example 20000 (len 35)... sim=0.00%, |delta|=146
+... example 21000 (len 23)... sim=0.00%, |delta|=150
+... example 22000 (len 19)... sim=0.00%, |delta|=100
+... example 23000 (len 19)... sim=0.00%, |delta|=213
+... example 24000 (len 16)... sim=0.00%, |delta|=168
+... example 25000 (len 12)... sim=0.00%, |delta|=0
+... example 26000 (len 24)... sim=0.00%, |delta|=360
+... example 27000 (len 12)... sim=0.00%, |delta|=0
+... example 28000 (len 43)... sim=0.00%, |delta|=741
+... example 29000 (len 21)... sim=0.00%, |delta|=181
+... example 30000 (len 31)... sim=0.00%, |delta|=100
+... example 31000 (len 20)... sim=0.00%, |delta|=138
+... example 32000 (len 44)... sim=0.00%, |delta|=217
+... example 33000 (len 18)... sim=0.00%, |delta|=319
+... example 34000 (len 28)... sim=0.00%, |delta|=307
+... example 35000 (len 29)... sim=0.00%, |delta|=232
+... example 36000 (len 17)... sim=0.00%, |delta|=212
+... example 37000 (len 31)... sim=0.00%, |delta|=549
+... example 38000 (len 25)... sim=0.00%, |delta|=308
+... example 39000 (len 27)... sim=0.00%, |delta|=156
+inside a para time... 1358056619.19 1358057906.8 1287.61558104
+mydouble usage and freed: 6371783 141336979 |w|= 6371781 |avgw|= 6371781 |dw|= 0
+after para time... 1358057906.8
+gc can't reach 0
+pool_time= 0.0 s, compute_walltime= 1287.6 s, compute_cputime= 1287.6 (1287.6), copy_time= 0.0 s
+memory usage at iter 5 after fork: 950.6 MB	(996741120.0 B)
+self.c= 199160
+memory usage at iter 5: extra 123.5 MB	(129499136.0 B), total 950.6 MB	(996741120.0 B)
+iteration 5 training finished at Sun Jan 13 01:18:27 2013. now evaluating on dev...
+avg weights (trim) took 0.3 seconds.
+garbage collection... took 0.9 seconds
+eval on dev took 48.6 seconds.
+at iter 5, updates 39832 (early 28323, er 71.1%), dev 92.09%+, |w| 6371781, time 0.372h acctime 1.719h; steps 1273381 cover 68.5% accsteps 6577537; bad 0 br 0.0%
+gc can't reach 0
+mydouble usage and freed: 6371783 141336979 ------------------------
+iteration 6 starts..............Sun Jan 13 01:19:18 2013
+memory usage at iter 6 before pool: 952.1 MB	(998313984.0 B)
+memory usage at iter 6 after pool: 952.1 MB	(998313984.0 B)
+before para time... 1358057958.06
+... example 1000 (len 21)... sim=0.00%, |delta|=100
+... example 2000 (len 20)... sim=0.00%, |delta|=240
+... example 3000 (len 24)... sim=0.00%, |delta|=100
+... example 4000 (len 47)... sim=0.00%, |delta|=375
+... example 5000 (len 40)... sim=0.00%, |delta|=419
+... example 6000 (len 30)... sim=0.00%, |delta|=296
+... example 7000 (len 34)... sim=0.00%, |delta|=295
+... example 8000 (len 16)... sim=0.00%, |delta|=417
+... example 9000 (len 23)... sim=0.00%, |delta|=302
+... example 10000 (len 19)... sim=0.00%, |delta|=100
+... example 11000 (len 23)... sim=0.00%, |delta|=542
+... example 12000 (len 13)... sim=0.00%, |delta|=100
+... example 13000 (len 21)... sim=0.00%, |delta|=225
+... example 14000 (len 28)... sim=0.00%, |delta|=301
+... example 15000 (len 18)... sim=0.00%, |delta|=0
+... example 16000 (len 30)... sim=0.00%, |delta|=968
+... example 17000 (len 21)... sim=0.00%, |delta|=100
+... example 18000 (len 24)... sim=0.00%, |delta|=0
+... example 19000 (len 12)... sim=0.00%, |delta|=0
+... example 20000 (len 35)... sim=0.00%, |delta|=283
+... example 21000 (len 23)... sim=0.00%, |delta|=184
+... example 22000 (len 19)... sim=0.00%, |delta|=162
+... example 23000 (len 19)... sim=0.00%, |delta|=177
+... example 24000 (len 16)... sim=0.00%, |delta|=0
+... example 25000 (len 12)... sim=0.00%, |delta|=100
+... example 26000 (len 24)... sim=0.00%, |delta|=295
+... example 27000 (len 12)... sim=0.00%, |delta|=0
+... example 28000 (len 43)... sim=0.00%, |delta|=246
+... example 29000 (len 21)... sim=0.00%, |delta|=208
+... example 30000 (len 31)... sim=0.00%, |delta|=199
+... example 31000 (len 20)... sim=0.00%, |delta|=284
+... example 32000 (len 44)... sim=0.00%, |delta|=392
+... example 33000 (len 18)... sim=0.00%, |delta|=100
+... example 34000 (len 28)... sim=0.00%, |delta|=185
+... example 35000 (len 29)... sim=0.00%, |delta|=372
+... example 36000 (len 17)... sim=0.00%, |delta|=202
+... example 37000 (len 31)... sim=0.00%, |delta|=157
+... example 38000 (len 25)... sim=0.00%, |delta|=152
+... example 39000 (len 27)... sim=0.00%, |delta|=167
+inside a para time... 1358057958.06 1358059239.55 1281.48878193
+mydouble usage and freed: 6623301 160558536 |w|= 6623299 |avgw|= 6623299 |dw|= 0
+after para time... 1358059239.55
+gc can't reach 0
+pool_time= 0.0 s, compute_walltime= 1281.5 s, compute_cputime= 1281.5 (1281.5), copy_time= 0.0 s
+memory usage at iter 6 after fork: 972.8 MB	(1020071936.0 B)
+self.c= 238992
+memory usage at iter 6: extra 20.8 MB	(21757952.0 B), total 972.8 MB	(1020071936.0 B)
+iteration 6 training finished at Sun Jan 13 01:40:40 2013. now evaluating on dev...
+avg weights (trim) took 0.4 seconds.
+garbage collection... took 1.1 seconds
+eval on dev took 53.2 seconds.
+at iter 6, updates 39832 (early 27304, er 68.5%), dev 92.13%+, |w| 6623299, time 0.371h acctime 2.091h; steps 1276246 cover 68.6% accsteps 7853783; bad 0 br 0.0%
+gc can't reach 0
+mydouble usage and freed: 6623301 160558536 ------------------------
+iteration 7 starts..............Sun Jan 13 01:41:35 2013
+memory usage at iter 7 before pool: 974.1 MB	(1021382656.0 B)
+memory usage at iter 7 after pool: 974.1 MB	(1021382656.0 B)
+before para time... 1358059295.71
+... example 1000 (len 21)... sim=0.00%, |delta|=163
+... example 2000 (len 20)... sim=0.00%, |delta|=303
+... example 3000 (len 24)... sim=0.00%, |delta|=0
+... example 4000 (len 47)... sim=0.00%, |delta|=148
+... example 5000 (len 40)... sim=0.00%, |delta|=469
+... example 6000 (len 30)... sim=0.00%, |delta|=296
+... example 7000 (len 34)... sim=0.00%, |delta|=100
+... example 8000 (len 16)... sim=0.00%, |delta|=169
+... example 9000 (len 23)... sim=0.00%, |delta|=208
+... example 10000 (len 19)... sim=0.00%, |delta|=153
+... example 11000 (len 23)... sim=0.00%, |delta|=100
+... example 12000 (len 13)... sim=0.00%, |delta|=166
+... example 13000 (len 21)... sim=0.00%, |delta|=298
+... example 14000 (len 28)... sim=0.00%, |delta|=375
+... example 15000 (len 18)... sim=0.00%, |delta|=0
+... example 16000 (len 30)... sim=0.00%, |delta|=682
+... example 17000 (len 21)... sim=0.00%, |delta|=0
+... example 18000 (len 24)... sim=0.00%, |delta|=525
+... example 19000 (len 12)... sim=0.00%, |delta|=0
+... example 20000 (len 35)... sim=0.00%, |delta|=400
+... example 21000 (len 23)... sim=0.00%, |delta|=463
+... example 22000 (len 19)... sim=0.00%, |delta|=0
+... example 23000 (len 19)... sim=0.00%, |delta|=499
+... example 24000 (len 16)... sim=0.00%, |delta|=148
+... example 25000 (len 12)... sim=0.00%, |delta|=0
+... example 26000 (len 24)... sim=0.00%, |delta|=218
+... example 27000 (len 12)... sim=0.00%, |delta|=0
+... example 28000 (len 43)... sim=0.00%, |delta|=639
+... example 29000 (len 21)... sim=0.00%, |delta|=409
+... example 30000 (len 31)... sim=0.00%, |delta|=100
+... example 31000 (len 20)... sim=0.00%, |delta|=154
+... example 32000 (len 44)... sim=0.00%, |delta|=394
+... example 33000 (len 18)... sim=0.00%, |delta|=170
+... example 34000 (len 28)... sim=0.00%, |delta|=459
+... example 35000 (len 29)... sim=0.00%, |delta|=397
+... example 36000 (len 17)... sim=0.00%, |delta|=198
+... example 37000 (len 31)... sim=0.00%, |delta|=100
+... example 38000 (len 25)... sim=0.00%, |delta|=0
+... example 39000 (len 27)... sim=0.00%, |delta|=220
+inside a para time... 1358059295.71 1358060616.94 1321.23570514
+mydouble usage and freed: 6825731 178320009 |w|= 6825729 |avgw|= 6825729 |dw|= 0
+after para time... 1358060616.94
+gc can't reach 0
+pool_time= 0.0 s, compute_walltime= 1321.2 s, compute_cputime= 1321.2 (1321.2), copy_time= 0.0 s
+memory usage at iter 7 after fork: 990.8 MB	(1038950400.0 B)
+self.c= 278824
+memory usage at iter 7: extra 16.8 MB	(17567744.0 B), total 990.8 MB	(1038950400.0 B)
+iteration 7 training finished at Sun Jan 13 02:03:38 2013. now evaluating on dev...
+avg weights (trim) took 0.4 seconds.
+garbage collection... took 1.3 seconds
+eval on dev took 51.5 seconds.
+at iter 7, updates 39832 (early 26396, er 66.3%), dev 92.18%+, |w| 6825729, time 0.382h acctime 2.473h; steps 1276447 cover 68.6% accsteps 9130230; bad 0 br 0.0%
+gc can't reach 0
+mydouble usage and freed: 6825731 178320009 ------------------------
+iteration 8 starts..............Sun Jan 13 02:04:31 2013
+memory usage at iter 8 before pool: 991.8 MB	(1039998976.0 B)
+memory usage at iter 8 after pool: 991.8 MB	(1039998976.0 B)
+before para time... 1358060671.76
+... example 1000 (len 21)... sim=0.00%, |delta|=100
+... example 2000 (len 20)... sim=0.00%, |delta|=208
+... example 3000 (len 24)... sim=0.00%, |delta|=172
+... example 4000 (len 47)... sim=0.00%, |delta|=154
+... example 5000 (len 40)... sim=0.00%, |delta|=200
+... example 6000 (len 30)... sim=0.00%, |delta|=296
+... example 7000 (len 34)... sim=0.00%, |delta|=100
+... example 8000 (len 16)... sim=0.00%, |delta|=169
+... example 9000 (len 23)... sim=0.00%, |delta|=321
+... example 10000 (len 19)... sim=0.00%, |delta|=221
+... example 11000 (len 23)... sim=0.00%, |delta|=0
+... example 12000 (len 13)... sim=0.00%, |delta|=166
+... example 13000 (len 21)... sim=0.00%, |delta|=466
+... example 14000 (len 28)... sim=0.00%, |delta|=100
+... example 15000 (len 18)... sim=0.00%, |delta|=0
+... example 16000 (len 30)... sim=0.00%, |delta|=230
+... example 17000 (len 21)... sim=0.00%, |delta|=342
+... example 18000 (len 24)... sim=0.00%, |delta|=212
+... example 19000 (len 12)... sim=0.00%, |delta|=0
+... example 20000 (len 35)... sim=0.00%, |delta|=378
+... example 21000 (len 23)... sim=0.00%, |delta|=150
+... example 22000 (len 19)... sim=0.00%, |delta|=100
+... example 23000 (len 19)... sim=0.00%, |delta|=144
+... example 24000 (len 16)... sim=0.00%, |delta|=256
+... example 25000 (len 12)... sim=0.00%, |delta|=219
+... example 26000 (len 24)... sim=0.00%, |delta|=174
+... example 27000 (len 12)... sim=0.00%, |delta|=0
+... example 28000 (len 43)... sim=0.00%, |delta|=368
+... example 29000 (len 21)... sim=0.00%, |delta|=153
+... example 30000 (len 31)... sim=0.00%, |delta|=329
+... example 31000 (len 20)... sim=0.00%, |delta|=100
+... example 32000 (len 44)... sim=0.00%, |delta|=160
+... example 33000 (len 18)... sim=0.00%, |delta|=100
+... example 34000 (len 28)... sim=0.00%, |delta|=100
+... example 35000 (len 29)... sim=0.00%, |delta|=169
+... example 36000 (len 17)... sim=0.00%, |delta|=202
+... example 37000 (len 31)... sim=0.00%, |delta|=207
+... example 38000 (len 25)... sim=0.00%, |delta|=168
+... example 39000 (len 27)... sim=0.00%, |delta|=0
+inside a para time... 1358060671.76 1358061991.43 1319.67029095
+mydouble usage and freed: 6994435 194969998 |w|= 6994433 |avgw|= 6994433 |dw|= 0
+after para time... 1358061991.43
+gc can't reach 0
+pool_time= 0.0 s, compute_walltime= 1319.7 s, compute_cputime= 1319.7 (1319.7), copy_time= 0.0 s
+memory usage at iter 8 after fork: 1005.6 MB	(1054416896.0 B)
+self.c= 318656
+memory usage at iter 8: extra 13.8 MB	(14417920.0 B), total 1005.6 MB	(1054416896.0 B)
+iteration 8 training finished at Sun Jan 13 02:26:32 2013. now evaluating on dev...
+avg weights (trim) took 0.4 seconds.
+garbage collection... took 1.1 seconds
+eval on dev took 54.1 seconds.
+at iter 8, updates 39832 (early 25501, er 64.0%), dev 92.18%, |w| 6994433, time 0.382h acctime 2.855h; steps 1283746 cover 69.0% accsteps 10413976; bad 0 br 0.0%
+gc can't reach 0
+mydouble usage and freed: 6994435 194969998 ------------------------
+iteration 9 starts..............Sun Jan 13 02:27:28 2013
+memory usage at iter 9 before pool: 1006.8 MB	(1055727616.0 B)
+memory usage at iter 9 after pool: 1006.8 MB	(1055727616.0 B)
+before para time... 1358062048.57
+... example 1000 (len 21)... sim=0.00%, |delta|=316
+... example 2000 (len 20)... sim=0.00%, |delta|=197
+... example 3000 (len 24)... sim=0.00%, |delta|=100
+... example 4000 (len 47)... sim=0.00%, |delta|=304
+... example 5000 (len 40)... sim=0.00%, |delta|=434
+... example 6000 (len 30)... sim=0.00%, |delta|=382
+... example 7000 (len 34)... sim=0.00%, |delta|=0
+... example 8000 (len 16)... sim=0.00%, |delta|=179
+... example 9000 (len 23)... sim=0.00%, |delta|=100
+... example 10000 (len 19)... sim=0.00%, |delta|=100
+... example 11000 (len 23)... sim=0.00%, |delta|=208
+... example 12000 (len 13)... sim=0.00%, |delta|=166
+... example 13000 (len 21)... sim=0.00%, |delta|=176
+... example 14000 (len 28)... sim=0.00%, |delta|=100
+... example 15000 (len 18)... sim=0.00%, |delta|=0
+... example 16000 (len 30)... sim=0.00%, |delta|=484
+... example 17000 (len 21)... sim=0.00%, |delta|=100
+... example 18000 (len 24)... sim=0.00%, |delta|=172
+... example 19000 (len 12)... sim=0.00%, |delta|=100
+... example 20000 (len 35)... sim=0.00%, |delta|=224
+... example 21000 (len 23)... sim=0.00%, |delta|=100
+... example 22000 (len 19)... sim=0.00%, |delta|=0
+... example 23000 (len 19)... sim=0.00%, |delta|=169
+... example 24000 (len 16)... sim=0.00%, |delta|=0
+... example 25000 (len 12)... sim=0.00%, |delta|=219
+... example 26000 (len 24)... sim=0.00%, |delta|=249
+... example 27000 (len 12)... sim=0.00%, |delta|=0
+... example 28000 (len 43)... sim=0.00%, |delta|=584
+... example 29000 (len 21)... sim=0.00%, |delta|=169
+... example 30000 (len 31)... sim=0.00%, |delta|=180
+... example 31000 (len 20)... sim=0.00%, |delta|=100
+... example 32000 (len 44)... sim=0.00%, |delta|=100
+... example 33000 (len 18)... sim=0.00%, |delta|=692
+... example 34000 (len 28)... sim=0.00%, |delta|=318
+... example 35000 (len 29)... sim=0.00%, |delta|=334
+... example 36000 (len 17)... sim=0.00%, |delta|=100
+... example 37000 (len 31)... sim=0.00%, |delta|=185
+... example 38000 (len 25)... sim=0.00%, |delta|=343
+... example 39000 (len 27)... sim=0.00%, |delta|=160
+inside a para time... 1358062048.57 1358063407.97 1359.40183282
+mydouble usage and freed: 7140842 210585717 |w|= 7140840 |avgw|= 7140840 |dw|= 0
+after para time... 1358063407.97
+gc can't reach 0
+pool_time= 0.0 s, compute_walltime= 1359.4 s, compute_cputime= 1359.4 (1359.4), copy_time= 0.0 s
+memory usage at iter 9 after fork: 1018.6 MB	(1068048384.0 B)
+self.c= 358488
+memory usage at iter 9: extra 11.8 MB	(12320768.0 B), total 1018.6 MB	(1068048384.0 B)
+iteration 9 training finished at Sun Jan 13 02:50:09 2013. now evaluating on dev...
+avg weights (trim) took 0.4 seconds.
+garbage collection... took 1.1 seconds
+eval on dev took 54.1 seconds.
+at iter 9, updates 39832 (early 24650, er 61.9%), dev 92.19%+, |w| 7140840, time 0.393h acctime 3.249h; steps 1289351 cover 69.3% accsteps 11703327; bad 0 br 0.0%
+gc can't reach 0
+mydouble usage and freed: 7140842 210585717 ------------------------
+iteration 10 starts..............Sun Jan 13 02:51:05 2013
+memory usage at iter 10 before pool: 1019.6 MB	(1069096960.0 B)
+memory usage at iter 10 after pool: 1019.6 MB	(1069096960.0 B)
+before para time... 1358063465.21
+... example 1000 (len 21)... sim=0.00%, |delta|=343
+... example 2000 (len 20)... sim=0.00%, |delta|=289
+... example 3000 (len 24)... sim=0.00%, |delta|=160
+... example 4000 (len 47)... sim=0.00%, |delta|=312
+... example 5000 (len 40)... sim=0.00%, |delta|=220
+... example 6000 (len 30)... sim=0.00%, |delta|=293
+... example 7000 (len 34)... sim=0.00%, |delta|=564
+... example 8000 (len 16)... sim=0.00%, |delta|=100
+... example 9000 (len 23)... sim=0.00%, |delta|=100
+... example 10000 (len 19)... sim=0.00%, |delta|=498
+... example 11000 (len 23)... sim=0.00%, |delta|=150
+... example 12000 (len 13)... sim=0.00%, |delta|=0
+... example 13000 (len 21)... sim=0.00%, |delta|=226
+... example 14000 (len 28)... sim=0.00%, |delta|=0
+... example 15000 (len 18)... sim=0.00%, |delta|=0
+... example 16000 (len 30)... sim=0.00%, |delta|=154
+... example 17000 (len 21)... sim=0.00%, |delta|=325
+... example 18000 (len 24)... sim=0.00%, |delta|=348
+... example 19000 (len 12)... sim=0.00%, |delta|=0
+... example 20000 (len 35)... sim=0.00%, |delta|=100
+... example 21000 (len 23)... sim=0.00%, |delta|=0
+... example 22000 (len 19)... sim=0.00%, |delta|=174
+... example 23000 (len 19)... sim=0.00%, |delta|=100
+... example 24000 (len 16)... sim=0.00%, |delta|=168
+... example 25000 (len 12)... sim=0.00%, |delta|=0
+... example 26000 (len 24)... sim=0.00%, |delta|=360
+... example 27000 (len 12)... sim=0.00%, |delta|=0
+... example 28000 (len 43)... sim=0.00%, |delta|=274
+... example 29000 (len 21)... sim=0.00%, |delta|=449
+... example 30000 (len 31)... sim=0.00%, |delta|=136
+... example 31000 (len 20)... sim=0.00%, |delta|=100
+... example 32000 (len 44)... sim=0.00%, |delta|=250
+... example 33000 (len 18)... sim=0.00%, |delta|=170
+... example 34000 (len 28)... sim=0.00%, |delta|=172
+... example 35000 (len 29)... sim=0.00%, |delta|=166
+... example 36000 (len 17)... sim=0.00%, |delta|=305
+... example 37000 (len 31)... sim=0.00%, |delta|=184
+... example 38000 (len 25)... sim=0.00%, |delta|=0
+... example 39000 (len 27)... sim=0.00%, |delta|=156
+inside a para time... 1358063465.21 1358064829.33 1364.12658906
+mydouble usage and freed: 7262115 225314852 |w|= 7262113 |avgw|= 7262113 |dw|= 0
+after para time... 1358064829.33
+gc can't reach 0
+pool_time= 0.0 s, compute_walltime= 1364.1 s, compute_cputime= 1364.1 (1364.1), copy_time= 0.0 s
+memory usage at iter 10 after fork: 1.0 GB	(1079320576.0 B)
+self.c= 398320
+memory usage at iter 10: extra 9.8 MB	(10223616.0 B), total 1.0 GB	(1079320576.0 B)
+iteration 10 training finished at Sun Jan 13 03:13:51 2013. now evaluating on dev...
+avg weights (trim) took 0.5 seconds.
+garbage collection... took 1.4 seconds
+eval on dev took 59.8 seconds.
+at iter 10, updates 39832 (early 23890, er 60.0%), dev 92.25%+, |w| 7262113, time 0.396h acctime 3.645h; steps 1295818 cover 69.7% accsteps 12999145; bad 0 br 0.0%
+gc can't reach 0
+mydouble usage and freed: 7262115 225314852 ------------------------
+iteration 11 starts..............Sun Jan 13 03:14:53 2013
+memory usage at iter 11 before pool: 1.0 GB	(1080369152.0 B)
+memory usage at iter 11 after pool: 1.0 GB	(1080369152.0 B)
+before para time... 1358064893.12
+... example 1000 (len 21)... sim=0.00%, |delta|=177
+... example 2000 (len 20)... sim=0.00%, |delta|=208
+... example 3000 (len 24)... sim=0.00%, |delta|=0
+... example 4000 (len 47)... sim=0.00%, |delta|=0
+... example 5000 (len 40)... sim=0.00%, |delta|=377
+... example 6000 (len 30)... sim=0.00%, |delta|=164
+... example 7000 (len 34)... sim=0.00%, |delta|=350
+... example 8000 (len 16)... sim=0.00%, |delta|=231
+... example 9000 (len 23)... sim=0.00%, |delta|=600
+... example 10000 (len 19)... sim=0.00%, |delta|=0
+... example 11000 (len 23)... sim=0.00%, |delta|=0
+... example 12000 (len 13)... sim=0.00%, |delta|=0
+... example 13000 (len 21)... sim=0.00%, |delta|=148
+... example 14000 (len 28)... sim=0.00%, |delta|=0
+... example 15000 (len 18)... sim=0.00%, |delta|=0
+... example 16000 (len 30)... sim=0.00%, |delta|=796
+... example 17000 (len 21)... sim=0.00%, |delta|=0
+... example 18000 (len 24)... sim=0.00%, |delta|=0
+... example 19000 (len 12)... sim=0.00%, |delta|=100
+... example 20000 (len 35)... sim=0.00%, |delta|=224
+... example 21000 (len 23)... sim=0.00%, |delta|=0
+... example 22000 (len 19)... sim=0.00%, |delta|=0
+... example 23000 (len 19)... sim=0.00%, |delta|=100
+... example 24000 (len 16)... sim=0.00%, |delta|=0
+... example 25000 (len 12)... sim=0.00%, |delta|=0
+... example 26000 (len 24)... sim=0.00%, |delta|=100
+... example 27000 (len 12)... sim=0.00%, |delta|=100
+... example 28000 (len 43)... sim=0.00%, |delta|=100
+... example 29000 (len 21)... sim=0.00%, |delta|=169
+... example 30000 (len 31)... sim=0.00%, |delta|=144
+... example 31000 (len 20)... sim=0.00%, |delta|=100
+... example 32000 (len 44)... sim=0.00%, |delta|=392
+... example 33000 (len 18)... sim=0.00%, |delta|=100
+... example 34000 (len 28)... sim=0.00%, |delta|=286
+... example 35000 (len 29)... sim=0.00%, |delta|=214
+... example 36000 (len 17)... sim=0.00%, |delta|=202
+... example 37000 (len 31)... sim=0.00%, |delta|=444
+... example 38000 (len 25)... sim=0.00%, |delta|=0
+... example 39000 (len 27)... sim=0.00%, |delta|=160
+inside a para time... 1358064893.12 1358066268.5 1375.37957978
+mydouble usage and freed: 7368469 239333850 |w|= 7368467 |avgw|= 7368467 |dw|= 0
+after para time... 1358066268.5
+gc can't reach 0
+pool_time= 0.0 s, compute_walltime= 1375.4 s, compute_cputime= 1375.4 (1375.4), copy_time= 0.0 s
+memory usage at iter 11 after fork: 1.0 GB	(1089282048.0 B)
+self.c= 438152
+memory usage at iter 11: extra 8.5 MB	(8912896.0 B), total 1.0 GB	(1089282048.0 B)
+iteration 11 training finished at Sun Jan 13 03:37:49 2013. now evaluating on dev...
+avg weights (trim) took 0.4 seconds.
+garbage collection... took 1.3 seconds
+eval on dev took 55.7 seconds.
+at iter 11, updates 39832 (early 23170, er 58.2%), dev 92.25%, |w| 7368467, time 0.398h acctime 4.044h; steps 1300607 cover 69.9% accsteps 14299752; bad 0 br 0.0%
+gc can't reach 0
+mydouble usage and freed: 7368469 239333850 ------------------------
+iteration 12 starts..............Sun Jan 13 03:38:47 2013
+memory usage at iter 12 before pool: 1.0 GB	(1090330624.0 B)
+memory usage at iter 12 after pool: 1.0 GB	(1090330624.0 B)
+before para time... 1358066327.47
+... example 1000 (len 21)... sim=0.00%, |delta|=0
+... example 2000 (len 20)... sim=0.00%, |delta|=170
+... example 3000 (len 24)... sim=0.00%, |delta|=0
+... example 4000 (len 47)... sim=0.00%, |delta|=252
+... example 5000 (len 40)... sim=0.00%, |delta|=905
+... example 6000 (len 30)... sim=0.00%, |delta|=635
+... example 7000 (len 34)... sim=0.00%, |delta|=0
+... example 8000 (len 16)... sim=0.00%, |delta|=100
+... example 9000 (len 23)... sim=0.00%, |delta|=208
+... example 10000 (len 19)... sim=0.00%, |delta|=0
+... example 11000 (len 23)... sim=0.00%, |delta|=243
+... example 12000 (len 13)... sim=0.00%, |delta|=100
+... example 13000 (len 21)... sim=0.00%, |delta|=220
+... example 14000 (len 28)... sim=0.00%, |delta|=100
+... example 15000 (len 18)... sim=0.00%, |delta|=0
+... example 16000 (len 30)... sim=0.00%, |delta|=358
+... example 17000 (len 21)... sim=0.00%, |delta|=0
+... example 18000 (len 24)... sim=0.00%, |delta|=100
+... example 19000 (len 12)... sim=0.00%, |delta|=0
+... example 20000 (len 35)... sim=0.00%, |delta|=160
+... example 21000 (len 23)... sim=0.00%, |delta|=158
+... example 22000 (len 19)... sim=0.00%, |delta|=224
+... example 23000 (len 19)... sim=0.00%, |delta|=100
+... example 24000 (len 16)... sim=0.00%, |delta|=0
+... example 25000 (len 12)... sim=0.00%, |delta|=0
+... example 26000 (len 24)... sim=0.00%, |delta|=0
+... example 27000 (len 12)... sim=0.00%, |delta|=0
+... example 28000 (len 43)... sim=0.00%, |delta|=448
+... example 29000 (len 21)... sim=0.00%, |delta|=582
+... example 30000 (len 31)... sim=0.00%, |delta|=0
+... example 31000 (len 20)... sim=0.00%, |delta|=100
+... example 32000 (len 44)... sim=0.00%, |delta|=328
+... example 33000 (len 18)... sim=0.00%, |delta|=100
+... example 34000 (len 28)... sim=0.00%, |delta|=374
+... example 35000 (len 29)... sim=0.00%, |delta|=379
+... example 36000 (len 17)... sim=0.00%, |delta|=0
+... example 37000 (len 31)... sim=0.00%, |delta|=310
+... example 38000 (len 25)... sim=0.00%, |delta|=0
+... example 39000 (len 27)... sim=0.00%, |delta|=0
+inside a para time... 1358066327.47 1358067712.68 1385.21448112
+mydouble usage and freed: 7460264 252622299 |w|= 7460262 |avgw|= 7460262 |dw|= 0
+after para time... 1358067712.68
+gc can't reach 0
+pool_time= 0.0 s, compute_walltime= 1385.2 s, compute_cputime= 1385.2 (1385.2), copy_time= 0.0 s
+memory usage at iter 12 after fork: 1.0 GB	(1097412608.0 B)
+self.c= 477984
+memory usage at iter 12: extra 6.8 MB	(7081984.0 B), total 1.0 GB	(1097412608.0 B)
+iteration 12 training finished at Sun Jan 13 04:01:54 2013. now evaluating on dev...
+avg weights (trim) took 0.4 seconds.
+garbage collection... took 1.2 seconds
+eval on dev took 56.2 seconds.
+at iter 12, updates 39832 (early 22453, er 56.4%), dev 92.32%+, |w| 7460262, time 0.401h acctime 4.445h; steps 1311115 cover 70.5% accsteps 15610867; bad 0 br 0.0%
+gc can't reach 0
+mydouble usage and freed: 7460264 252622299 ------------------------
+iteration 13 starts..............Sun Jan 13 04:02:52 2013
+memory usage at iter 13 before pool: 1.0 GB	(1098723328.0 B)
+memory usage at iter 13 after pool: 1.0 GB	(1098723328.0 B)
+before para time... 1358067772.21
+... example 1000 (len 21)... sim=0.00%, |delta|=100
+... example 2000 (len 20)... sim=0.00%, |delta|=215
+... example 3000 (len 24)... sim=0.00%, |delta|=373
+... example 4000 (len 47)... sim=0.00%, |delta|=167
+... example 5000 (len 40)... sim=0.00%, |delta|=225
+... example 6000 (len 30)... sim=0.00%, |delta|=263
+... example 7000 (len 34)... sim=0.00%, |delta|=184
+... example 8000 (len 16)... sim=0.00%, |delta|=0
+... example 9000 (len 23)... sim=0.00%, |delta|=0
+... example 10000 (len 19)... sim=0.00%, |delta|=100
+... example 11000 (len 23)... sim=0.00%, |delta|=268
+... example 12000 (len 13)... sim=0.00%, |delta|=0
+... example 13000 (len 21)... sim=0.00%, |delta|=263
+... example 14000 (len 28)... sim=0.00%, |delta|=356
+... example 15000 (len 18)... sim=0.00%, |delta|=0
+... example 16000 (len 30)... sim=0.00%, |delta|=642
+... example 17000 (len 21)... sim=0.00%, |delta|=220
+... example 18000 (len 24)... sim=0.00%, |delta|=0
+... example 19000 (len 12)... sim=0.00%, |delta|=0
+... example 20000 (len 35)... sim=0.00%, |delta|=374
+... example 21000 (len 23)... sim=0.00%, |delta|=0
+... example 22000 (len 19)... sim=0.00%, |delta|=100
+... example 23000 (len 19)... sim=0.00%, |delta|=100
+... example 24000 (len 16)... sim=0.00%, |delta|=176
+... example 25000 (len 12)... sim=0.00%, |delta|=0
+... example 26000 (len 24)... sim=0.00%, |delta|=0
+... example 27000 (len 12)... sim=0.00%, |delta|=0
+... example 28000 (len 43)... sim=0.00%, |delta|=188
+... example 29000 (len 21)... sim=0.00%, |delta|=100
+... example 30000 (len 31)... sim=0.00%, |delta|=293
+... example 31000 (len 20)... sim=0.00%, |delta|=193
+... example 32000 (len 44)... sim=0.00%, |delta|=100
+... example 33000 (len 18)... sim=0.00%, |delta|=464
+... example 34000 (len 28)... sim=0.00%, |delta|=307
+... example 35000 (len 29)... sim=0.00%, |delta|=295
+... example 36000 (len 17)... sim=0.00%, |delta|=202
+... example 37000 (len 31)... sim=0.00%, |delta|=265
+... example 38000 (len 25)... sim=0.00%, |delta|=0
+... example 39000 (len 27)... sim=0.00%, |delta|=0
+inside a para time... 1358067772.21 1358069164.79 1392.58341098
+mydouble usage and freed: 7539830 265357722 |w|= 7539828 |avgw|= 7539828 |dw|= 0
+after para time... 1358069164.79
+gc can't reach 0
+pool_time= 0.0 s, compute_walltime= 1392.6 s, compute_cputime= 1392.6 (1392.6), copy_time= 0.0 s
+memory usage at iter 13 after fork: 1.0 GB	(1105014784.0 B)
+self.c= 517816
+memory usage at iter 13: extra 6.0 MB	(6291456.0 B), total 1.0 GB	(1105014784.0 B)
+iteration 13 training finished at Sun Jan 13 04:26:06 2013. now evaluating on dev...
+avg weights (trim) took 0.4 seconds.
+garbage collection... took 1.3 seconds
+eval on dev took 57.6 seconds.
+at iter 13, updates 39832 (early 21604, er 54.2%), dev 92.31%, |w| 7539828, time 0.403h acctime 4.849h; steps 1325212 cover 71.2% accsteps 16936079; bad 0 br 0.0%
+gc can't reach 0
+mydouble usage and freed: 7539830 265357722 ------------------------
+iteration 14 starts..............Sun Jan 13 04:27:06 2013
+memory usage at iter 14 before pool: 1.0 GB	(1106063360.0 B)
+memory usage at iter 14 after pool: 1.0 GB	(1106063360.0 B)
+before para time... 1358069226.06
+... example 1000 (len 21)... sim=0.00%, |delta|=0
+... example 2000 (len 20)... sim=0.00%, |delta|=0
+... example 3000 (len 24)... sim=0.00%, |delta|=100
+... example 4000 (len 47)... sim=0.00%, |delta|=277
+... example 5000 (len 40)... sim=0.00%, |delta|=206
+... example 6000 (len 30)... sim=0.00%, |delta|=212
+... example 7000 (len 34)... sim=0.00%, |delta|=221
+... example 8000 (len 16)... sim=0.00%, |delta|=0
+... example 9000 (len 23)... sim=0.00%, |delta|=208
+... example 10000 (len 19)... sim=0.00%, |delta|=221
+... example 11000 (len 23)... sim=0.00%, |delta|=100
+... example 12000 (len 13)... sim=0.00%, |delta|=229
+... example 13000 (len 21)... sim=0.00%, |delta|=298
+... example 14000 (len 28)... sim=0.00%, |delta|=0
+... example 15000 (len 18)... sim=0.00%, |delta|=0
+... example 16000 (len 30)... sim=0.00%, |delta|=100
+... example 17000 (len 21)... sim=0.00%, |delta|=0
+... example 18000 (len 24)... sim=0.00%, |delta|=150
+... example 19000 (len 12)... sim=0.00%, |delta|=0
+... example 20000 (len 35)... sim=0.00%, |delta|=268
+... example 21000 (len 23)... sim=0.00%, |delta|=0
+... example 22000 (len 19)... sim=0.00%, |delta|=100
+... example 23000 (len 19)... sim=0.00%, |delta|=214
+... example 24000 (len 16)... sim=0.00%, |delta|=0
+... example 25000 (len 12)... sim=0.00%, |delta|=0
+... example 26000 (len 24)... sim=0.00%, |delta|=0
+... example 27000 (len 12)... sim=0.00%, |delta|=0
+... example 28000 (len 43)... sim=0.00%, |delta|=166
+... example 29000 (len 21)... sim=0.00%, |delta|=208
+... example 30000 (len 31)... sim=0.00%, |delta|=180
+... example 31000 (len 20)... sim=0.00%, |delta|=100
+... example 32000 (len 44)... sim=0.00%, |delta|=100
+... example 33000 (len 18)... sim=0.00%, |delta|=298
+... example 34000 (len 28)... sim=0.00%, |delta|=307
+... example 35000 (len 29)... sim=0.00%, |delta|=164
+... example 36000 (len 17)... sim=0.00%, |delta|=202
+... example 37000 (len 31)... sim=0.00%, |delta|=100
+... example 38000 (len 25)... sim=0.00%, |delta|=205
+... example 39000 (len 27)... sim=0.00%, |delta|=156
+inside a para time... 1358069226.06 1358070639.08 1413.01152802
+mydouble usage and freed: 7614069 277724840 |w|= 7614067 |avgw|= 7614067 |dw|= 0
+after para time... 1358070639.08
+gc can't reach 0
+pool_time= 0.0 s, compute_walltime= 1413.0 s, compute_cputime= 1413.0 (1413.0), copy_time= 0.0 s
+memory usage at iter 14 after fork: 1.0 GB	(1111502848.0 B)
+self.c= 557648
+memory usage at iter 14: extra 5.2 MB	(5439488.0 B), total 1.0 GB	(1111502848.0 B)
+iteration 14 training finished at Sun Jan 13 04:50:40 2013. now evaluating on dev...
+avg weights (trim) took 0.5 seconds.
+garbage collection... took 1.4 seconds
+eval on dev took 58.2 seconds.
+at iter 14, updates 39832 (early 21023, er 52.8%), dev 92.30%, |w| 7614067, time 0.409h acctime 5.259h; steps 1338842 cover 72.0% accsteps 18274921; bad 0 br 0.0%
+gc can't reach 0
+mydouble usage and freed: 7614069 277724840 ------------------------
+iteration 15 starts..............Sun Jan 13 04:51:41 2013
+memory usage at iter 15 before pool: 1.0 GB	(1112879104.0 B)
+memory usage at iter 15 after pool: 1.0 GB	(1112879104.0 B)
+before para time... 1358070701.04
+... example 1000 (len 21)... sim=0.00%, |delta|=0
+... example 2000 (len 20)... sim=0.00%, |delta|=0
+... example 3000 (len 24)... sim=0.00%, |delta|=100
+... example 4000 (len 47)... sim=0.00%, |delta|=290
+... example 5000 (len 40)... sim=0.00%, |delta|=279
+... example 6000 (len 30)... sim=0.00%, |delta|=291
+... example 7000 (len 34)... sim=0.00%, |delta|=304
+... example 8000 (len 16)... sim=0.00%, |delta|=0
+... example 9000 (len 23)... sim=0.00%, |delta|=202
+... example 10000 (len 19)... sim=0.00%, |delta|=100
+... example 11000 (len 23)... sim=0.00%, |delta|=0
+... example 12000 (len 13)... sim=0.00%, |delta|=233
+... example 13000 (len 21)... sim=0.00%, |delta|=192
+... example 14000 (len 28)... sim=0.00%, |delta|=0
+... example 15000 (len 18)... sim=0.00%, |delta|=0
+... example 16000 (len 30)... sim=0.00%, |delta|=455
+... example 17000 (len 21)... sim=0.00%, |delta|=265
+... example 18000 (len 24)... sim=0.00%, |delta|=100
+... example 19000 (len 12)... sim=0.00%, |delta|=100
+... example 20000 (len 35)... sim=0.00%, |delta|=100
+... example 21000 (len 23)... sim=0.00%, |delta|=100
+... example 22000 (len 19)... sim=0.00%, |delta|=0
+... example 23000 (len 19)... sim=0.00%, |delta|=0
+... example 24000 (len 16)... sim=0.00%, |delta|=0
+... example 25000 (len 12)... sim=0.00%, |delta|=0
+... example 26000 (len 24)... sim=0.00%, |delta|=250
+... example 27000 (len 12)... sim=0.00%, |delta|=0
+... example 28000 (len 43)... sim=0.00%, |delta|=100
+... example 29000 (len 21)... sim=0.00%, |delta|=324
+... example 30000 (len 31)... sim=0.00%, |delta|=0
+... example 31000 (len 20)... sim=0.00%, |delta|=0
+... example 32000 (len 44)... sim=0.00%, |delta|=100
+... example 33000 (len 18)... sim=0.00%, |delta|=170
+... example 34000 (len 28)... sim=0.00%, |delta|=172
+... example 35000 (len 29)... sim=0.00%, |delta|=377
+... example 36000 (len 17)... sim=0.00%, |delta|=206
+... example 37000 (len 31)... sim=0.00%, |delta|=100
+... example 38000 (len 25)... sim=0.00%, |delta|=0
+... example 39000 (len 27)... sim=0.00%, |delta|=0
+inside a para time... 1358070701.04 1358072108.07 1407.02646518
+mydouble usage and freed: 7678922 289567318 |w|= 7678920 |avgw|= 7678920 |dw|= 0
+after para time... 1358072108.07
+gc can't reach 0
+pool_time= 0.0 s, compute_walltime= 1407.0 s, compute_cputime= 1407.0 (1407.0), copy_time= 0.0 s
+memory usage at iter 15 after fork: 1.0 GB	(1118056448.0 B)
+self.c= 597480
+memory usage at iter 15: extra 4.9 MB	(5177344.0 B), total 1.0 GB	(1118056448.0 B)
+iteration 15 training finished at Sun Jan 13 05:15:09 2013. now evaluating on dev...
+avg weights (trim) took 0.4 seconds.
+garbage collection... took 1.3 seconds
+eval on dev took 53.5 seconds.
+at iter 15, updates 39832 (early 20254, er 50.8%), dev 92.30%, |w| 7678920, time 0.406h acctime 5.665h; steps 1350604 cover 72.6% accsteps 19625525; bad 0 br 0.0%
+gc can't reach 0
+mydouble usage and freed: 7678922 289567318 ------------------------
+peaked at iteration 12: 92.32%, |bestw|= 7460262.
+Dumping best weights...
+7329686 nonzero feature instances written in 46.16 seconds.
+perceptron training of 15 iterations finished on Sun Jan 13 05:16:51 2013 (took 5.68 hours)

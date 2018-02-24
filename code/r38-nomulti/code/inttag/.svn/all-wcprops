@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/mydepparser/!svn/ver/37/code/inttag
+END
+deptree.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/mydepparser/!svn/ver/36/code/inttag/deptree.py
+END
+newstate.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/mydepparser/!svn/ver/37/code/inttag/newstate.py
+END
+parser.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/mydepparser/!svn/ver/34/code/inttag/parser.py
+END
+generate_dict.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/mydepparser/!svn/ver/36/code/inttag/generate_dict.py
+END
+tree.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/mydepparser/!svn/ver/18/code/inttag/tree.py
+END
+model.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/mydepparser/!svn/ver/36/code/inttag/model.py
+END
+forest.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/mydepparser/!svn/ver/18/code/inttag/forest.py
+END
+node_and_hyperedge.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/mydepparser/!svn/ver/18/code/inttag/node_and_hyperedge.py
+END
+gflags.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/mydepparser/!svn/ver/18/code/inttag/gflags.py
+END
+utility.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/mydepparser/!svn/ver/18/code/inttag/utility.py
+END
+trainer.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/mydepparser/!svn/ver/36/code/inttag/trainer.py
+END
+mytime.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/mydepparser/!svn/ver/18/code/inttag/mytime.py
+END
+fvector.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/mydepparser/!svn/ver/18/code/inttag/fvector.py
+END
+replace_postags.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/mydepparser/!svn/ver/18/code/inttag/replace_postags.py
+END
+oldstate.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/mydepparser/!svn/ver/18/code/inttag/oldstate.py
+END
+kbest_oracles.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/mydepparser/!svn/ver/18/code/inttag/kbest_oracles.py
+END
+depeval.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/mydepparser/!svn/ver/18/code/inttag/depeval.py
+END
+heads.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/mydepparser/!svn/ver/18/code/inttag/heads.py
+END

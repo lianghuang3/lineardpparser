@@ -1,0 +1,61 @@
+Almost-Linear-Time Dynamic Programming Shift-Reduce Dependency Parser.
+
+User Manual.
+
+
+1 PARSING ============================================================================================================
+
+	Usage:
+		cat <input_file> | ./code/parser.py -w <model_file> [--dp] [-b <beam_width>]
+
+
+	a) to parse POS-tagged sentences:
+
+		echo "I/PRP am/VBP a/DT scientist/NN ./." | ./code/parser.py -w small_model.b1 --dp 
+
+	output:
+		((I/PRP) am/VBP ((a/DT) scientist/NN) (./.))
+		sentence 1    (len 5): modelcost= 119.94	prec= 100.00	states= 9 (uniq 9)	edges= 18	time= 0.00
+
+
+	b) to parse and evaluate accuracy against gold trees:
+	
+		echo "((I/PRP) am/VBP ((a/DT) scientist/NN) (./.))" | ./code/parser.py -w full_model.ptb.b16.templates -b 16 --dp
+
+	output:
+		((I/PRP) am/VBP ((a/DT) scientist/NN) (./.))
+		sentence 1    (len 5): modelcost= 263.64	prec= 100.00	states= 71 (uniq 71)	edges= 133	time= 0.04
+
+
+	c) interactive mode:
+
+		./code/parser.py -w fulljiang.ptb.b16.templates -b 16 --dp
+
+
+	d) other parameters:
+
+		./code/parser.py:
+			-D,--debuglevel: debug level (0: no debug info, 1: brief, 2: detailed)   (default: '0')
+		  --[no]seq: print action sequence		    (default: 'false')
+		  -s,--sim: simulate action sequences from FILE
+		  --[no]uniqstat: print uniq states stat info		    (default: 'false')
+
+		model:
+		  --ow,--outputweights: write weights (in short-hand format); - for STDOUT
+
+
+2 MODELS =============================================================================================================
+
+	a) add templates to a feature file:
+	
+		./code/model.py -w small_model.b1 --ow small_model.b1.templates
+
+	this can usually speed up model loading by about 100%. (full model on PTB, n=16, nodp: 41.75 vs. 21.70 secs)
+
+	b) print feature stats:
+
+		./code/model.py -w small_model.b1
+
+
+3 TRAINING  ==========================================================================================================
+

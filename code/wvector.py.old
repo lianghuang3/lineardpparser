@@ -1,0 +1,166 @@
+'''weight vector'''
+
+from __future__ import division
+
+from collections import defaultdict
+
+import copy # slow
+import math
+
+import sys
+logs = sys.stderr
+
+import gflags as flags
+FLAGS=flags.FLAGS
+
+flags.DEFINE_boolean("nonzerolen", False, "output non-zero feature len")
+flags.DEFINE_boolean("trim", False, "trim")
+import gc
+import time
+
+import _collections
+
+class mydefaultdict(dict):
+
+    __missing__ = lambda _, __: 0
+    
+class WVector(dict):
+    ''' wvector[action][feat] = weight'''
+
+    action_names = None
+    trim = False
+
+    def __init__(self):
+        #list.__init__(self, [new_vector() for _ in action_names])
+##        dict.__init__(self, [(action, mydefaultdict()) for action in WVector.action_names])
+        dict.__init__(self, [(action, _collections.defaultdict(int)) for action in WVector.action_names])
+        
+    def iadd(self, other, c=1):
+        ''' c=float '''
+
+        for (action, feats) in other.iteritems():
+            my = self[action]
+            for feat, value in feats.iteritems():
+                my[feat] += value * c
+                if WVector.trim and math.fabs(my[feat]) < 1e-3:
+                    del my[feat]
+                    
+        return self
+    
+    def iadd2(self, other, other2, c2):
+        ''' c=1, c2=int '''
+
+        for (action, feats) in other.iteritems():
+            my = self[action]
+            for feat, value in feats.iteritems():
+                if WVector.trim and my[feat] == -value:                    
+                    del my[feat]
+                else:
+                    my[feat] += value
+
+            if other2 is not None and c2 != 0:
+                my2 = other2[action]
+                for feat, value in feats.iteritems():
+                    v = value * c2
+                    if WVector.trim and my2[feat] == -v:
+                        del my2[feat]
+                    else:
+                        my2[feat] += v # c2 is int
+                            
+        return self
+
+##    def iadd2(self, (plus, minus), c=1, other=None, c2=1):
+##        for action in WVector.action_names:
+##            my = self[action]
+
+##            plusfeats = sorted(plus[action]) + [None]
+##            minusfeats = sorted(minus[action]) + [None]
+####            print >> logs, action, plusfeats
+####            print >> logs, action, minusfeats
+
+##            i = j = 0
+##            fa = plusiter.next()
+##            fb = minusiter.next()
+                    
+##            while fa is not None and fb is not None:
+##                if fa == fb:
+##                    fa = plusiter.next()
+##                    fb = minusiter.next()
+##                elif fa < fb:
+##                    my[fa] += c                    
+##                    fa = plusiter.next()
+##                else:
+##                    my[fb] -= c
+##                    fb = minusiter.next()
+                    
+##            for f in plusiter[i:-1]:
+##                my[f] += c
+
+##            for f in minusfeats[j:-1]:
+##                my[f] -= c
+                
+##        return self        
+
+    def get_avg(self, all_weights, c):
+        ''' return self.weights - self.allweights * (1/self.c) '''
+
+        return self.copy().iadd(all_weights, -1./c)
+        return w.trim() if FLAGS.trim else w
+
+    def copy(self):
+        ''' should be made a lot faster!!'''
+
+        t = time.time()
+        new = WVector()
+        for action, feats in self.iteritems():
+            new[action] = copy.copy(feats)
+
+        print >> logs, "copying took %.1f seconds" % (time.time() - t)
+        return new
+
+    def get_flat_weights(self):
+        '''return single-layer dictionary'''
+        w = {}
+        for action, feats in self.iteritems():
+            for f, v in feats.iteritems():
+                w["%s=>%s" % (f, action)] = v
+        return w
+
+##    def trim(self):
+####        for action, feats in self.iteritems():
+####            for f, v in feats.items():
+####                if math.fabs(v) < 1e-3:
+####                    del feats[f]
+
+##        t = time.time()
+##        for action, feats in self.items():
+##            new = defaultdict(int)
+##            for f, v in feats.items():
+##                if math.fabs(v) > 1e-3:
+##                    new[f] = v
+##            self[action] = new
+
+##        print >> logs, "trimming took %.1f seconds" % (time.time() - t)
+
+##        gc.collect()
+        
+##        return self
+
+    def __len__(self):
+        ''' non-zero length '''
+        return sum(map(len, self.values())) if not FLAGS.nonzerolen else \
+               sum(len(filter(lambda v:math.fabs(v) > 1e-3, feats.values())) \
+                   for feats in self.values())
+
+    def __str__(self):
+        s = []
+        for action, feats in self.iteritems():
+            for f, v in feats.items():
+##                if math.fabs(v) > 1e-3:
+                s.append("%s=>%s=%s" % (f, action, v))
+        return " ".join(s)
+                    
+
+#     def evaluate(self, feats):
+#         '''like dot-product, but feats is a list of features'''
+#         return sum(map(self.__getitem__, feats)) # map is fast
