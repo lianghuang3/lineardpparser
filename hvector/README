@@ -31,18 +31,18 @@ TO USE
 
 >>> d.iaddl(["a", "c"])
 >>> d
-mydefaultdict(<type 'mydouble'>, {'a': 3.0, 'c': 0.0})
+mydefaultdict(<type 'mydouble'>, {'a': 3.0, 'c': 1.0})
 
 >>> d.iadd(d)                   # d += d
 >>> d
-mydefaultdict(<type 'mydouble'>, {'a': 6.0, 'c': 0.0})
+mydefaultdict(<type 'mydouble'>, {'a': 6.0, 'c': 2.0})
 >>> d.iaddc(d, 0.5)             # d += 0.5 * d
 >>> d
-mydefaultdict(<type 'mydouble'>, {'a': 9.0, 'c': 0.0})
+mydefaultdict(<type 'mydouble'>, {'a': 9.0, 'c': 3.0})
 
 >>> d.evaluate(["a", "a", "b"])   # dot-product
 18.0
 
 >>> d.addc(d, 0.1)                 # returns a new svector, d + 0.1 * d
-mydefaultdict(<type 'mydouble'>, {'a': 9.9, 'c': 0.0})
+mydefaultdict(<type 'mydouble'>, {'a': 9.9, 'c': 3.3})
 
